@@ -1,6 +1,5 @@
 import React from "react";
 import { ResponsiveBar, type BarDatum } from "@nivo/bar";
-import { Box } from "@mantine/core";
 import { labelDict } from "@/data/label-dict";
 
 interface Props {
@@ -9,7 +8,7 @@ interface Props {
 
 const SkillsBar: React.FC<Props> = ({ data }) => {
   return (
-    <Box style={{ height: "300px" }}>
+    <div className="h-[300px] w-full lg:max-w-md">
       <ResponsiveBar
         data={data}
         keys={["level"]}
@@ -48,7 +47,7 @@ const SkillsBar: React.FC<Props> = ({ data }) => {
         enableGridX={false}
         enableGridY={false}
       />
-    </Box>
+    </div>
   );
 };
 

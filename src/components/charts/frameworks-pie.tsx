@@ -1,5 +1,4 @@
 import { labelDict } from "@/data/label-dict";
-import { Box } from "@mantine/core";
 import { CompletePieSvgProps, MayHaveLabel, ResponsivePie } from "@nivo/pie";
 import React from "react";
 
@@ -11,7 +10,7 @@ const FrameworksPie: React.FC<Props> = ({ data }) => {
   }
 
   return (
-    <Box style={{ height: "300px" }}>
+    <div className="h-[300px] w-full lg:max-w-md">
       <ResponsivePie
         data={data}
         margin={{ top: 20, right: 60, bottom: 20, left: 60 }}
@@ -39,7 +38,7 @@ const FrameworksPie: React.FC<Props> = ({ data }) => {
         arcLinkLabelsStraightLength={9}
         arcLinkLabelsDiagonalLength={6}
       />
-    </Box>
+    </div>
   );
 };
 

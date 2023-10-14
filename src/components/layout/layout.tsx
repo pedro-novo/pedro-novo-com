@@ -1,25 +1,32 @@
 import React from "react";
-import { Box, Container, Grid, Image, Paper, Text, Title } from "@mantine/core";
-import { beSkills, feSkills, techSkills } from "@/data/skills";
-import dynamic from "next/dynamic";
-import { beTools, feTools, otherTools } from "@/data/frameworks";
-
-const links: { title: string; href: string }[] = [
-  { title: "LinkedIn", href: "https://www.linkedin.com/in/pedro-novo-teixeira/" },
-  { title: "GitHub", href: "https://github.com/pedro-novo" },
-  { title: "Portfolio", href: "https://pedro-novo.com" },
-];
-
-const SkillsBar = dynamic(() => import("../charts/skills-bar").then((module) => module.default), {
-  ssr: false,
-});
-const FrameworksPie = dynamic(() => import("../charts/frameworks-pie").then((module) => module.default), {
-  ssr: false,
-});
+import Profile from "../profile/profile";
+import AboutMe from "../about-me/about-me";
+import Skills from "../skills/skills";
+import Socials from "../socials/socials";
+import Books from "../books/books";
+import Referrals from "../referrals/referrals";
 
 const Layout: React.FC = () => {
   return (
-    <Container pt="xl" size={"xl"}>
+    <main>
+      <div className="mx-auto max-w-7xl py-10 xl:px-6 2xl:px-8">
+        <div className="sm:px-6 sm:py-10 lg:px-8 bg-white rounded-sm shadow-lg">
+          <Profile />
+          <AboutMe />
+          <Skills />
+          <Socials />
+          <Books />
+          <Referrals />
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Layout;
+
+{
+  /* <Container pt="xl" size={"xl"}>
       <Paper radius="md" shadow="md" p="lg">
         <Grid>
           <Grid.Col span={{ xs: 12, lg: 4 }}>
@@ -136,8 +143,5 @@ const Layout: React.FC = () => {
           <Grid.Col span={{ xs: 12, lg: 12 }}>Referalls</Grid.Col>
         </Grid>
       </Paper>
-    </Container>
-  );
-};
-
-export default Layout;
+    </Container> */
+}
