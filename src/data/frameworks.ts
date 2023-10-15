@@ -66,7 +66,7 @@ export const beTools = [
   },
 ];
 
-export const otherTools = [
+export const techTools = [
   {
     id: "MacOS",
     label: "MacOS",
