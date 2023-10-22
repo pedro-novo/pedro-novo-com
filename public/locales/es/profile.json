@@ -1,3 +1,8 @@
 {
-  "profileDetails": "Detalles del Perfil"
+  "profileDetails": "Detalles del Perfil",
+  "name": "Nombre",
+  "email": "Correo electrónico",
+  "role": "Función",
+  "company": "Empresa",
+  "socials": "Redes sociales"
 }

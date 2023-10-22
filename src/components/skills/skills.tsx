@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { feSkills, beSkills, techSkills } from "@/data/skills";
 import { feTools, beTools, techTools } from "@/data/frameworks";
 import { useTranslation } from "next-i18next";
+import { useDarkModeContext } from "../dark-mode-toggle/context/dark-mode-context";
 
 const SkillsBar = dynamic(() => import("../charts/skills-bar").then((module) => module.default), {
   ssr: false,
@@ -37,6 +38,27 @@ const specificSkills = [
 
 const Skills: React.FC = () => {
   const { t } = useTranslation("skills");
+  const { theme } = useDarkModeContext();
+  const [skillsBarColors, setSkillsBarColors] = useState("");
+  const [frameworksPieColors, setFrameworksPieColors] = useState([
+    "#083344",
+    "#155e75",
+    "#0891b2",
+    "#22d3ee",
+    "#a5f3fc",
+    "#ecfeff",
+  ]);
+
+  useEffect(() => {
+    if (theme === "dark") {
+      setSkillsBarColors("#A27C1A");
+      setFrameworksPieColors(["#513C06", "#A27C1A", "#E9B949", "#F7D070", "#F8E3A3", "#FFFAEB"]);
+      return;
+    }
+
+    setSkillsBarColors("#083344");
+    setFrameworksPieColors(["#083344", "#155e75", "#0891b2", "#22d3ee", "#a5f3fc", "#ecfeff"]);
+  }, [theme]);
 
   return (
     <section>
@@ -50,13 +72,13 @@ const Skills: React.FC = () => {
               <h5 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">
                 {t(skillsTitle)}
               </h5>
-              <SkillsBar data={skills} />
+              <SkillsBar data={skills} color={skillsBarColors} />
             </div>
             <div className="w-full">
               <h5 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">
                 {t(toolsTitle)}
               </h5>
-              <FrameworksPie data={tools} />
+              <FrameworksPie data={tools} colors={frameworksPieColors} />
             </div>
             <div className="w-full mb-20 xl:mb-48 lg:col-span-2">
               <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-2xl">

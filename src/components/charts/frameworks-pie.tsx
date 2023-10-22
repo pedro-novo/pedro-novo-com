@@ -2,9 +2,11 @@ import { labelDict } from "@/data/label-dict";
 import { CompletePieSvgProps, MayHaveLabel, ResponsivePie } from "@nivo/pie";
 import React from "react";
 
-interface Props extends Partial<CompletePieSvgProps<MayHaveLabel>> {}
+interface Props extends Partial<CompletePieSvgProps<MayHaveLabel>> {
+  colors: string[];
+}
 
-const FrameworksPie: React.FC<Props> = ({ data }) => {
+const FrameworksPie: React.FC<Props> = ({ data, colors }) => {
   if (!data) {
     return;
   }
@@ -19,7 +21,7 @@ const FrameworksPie: React.FC<Props> = ({ data }) => {
         cornerRadius={3}
         activeOuterRadiusOffset={8}
         borderWidth={1}
-        colors={["#083344", "#155e75", "#0891b2", "#22d3ee", "#a5f3fc", "#ecfeff"]}
+        colors={colors}
         borderColor={{
           from: "color",
           modifiers: [["darker", 0.2]],

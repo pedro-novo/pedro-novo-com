@@ -4,9 +4,10 @@ import { labelDict } from "@/data/label-dict";
 
 interface Props {
   data: BarDatum[];
+  color: string;
 }
 
-const SkillsBar: React.FC<Props> = ({ data }) => {
+const SkillsBar: React.FC<Props> = ({ data, color }) => {
   return (
     <div className="h-[300px] w-full lg:max-w-sm">
       <ResponsiveBar
@@ -19,7 +20,7 @@ const SkillsBar: React.FC<Props> = ({ data }) => {
         layout="horizontal"
         valueScale={{ type: "linear" }}
         indexScale={{ type: "band", round: true }}
-        colors={["#083344"]}
+        colors={[color]}
         borderColor={{
           from: "color",
           modifiers: [["darker", 1.6]],

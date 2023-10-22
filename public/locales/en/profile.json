@@ -1,3 +1,8 @@
 {
-  "profileDetails": "Profile Details"
+  "profileDetails": "Profile Details",
+  "name": "Name",
+  "email": "Email",
+  "role": "Role",
+  "company": "Company",
+  "socials": "Socials"
 }
