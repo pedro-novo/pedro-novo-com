@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
+import FlagDropdown from "../flag-dropdown/flag-dropdown";
 
 const links: { title: string; href: string }[] = [
   { title: "LinkedIn", href: "https://www.linkedin.com/in/pedro-novo-teixeira/" },
@@ -7,7 +9,9 @@ const links: { title: string; href: string }[] = [
 ];
 
 const ProfileDetails: React.FC = () => {
-  return <div>Profile Details</div>;
+  const { t } = useTranslation("profile");
+
+  return <div className="dark:text-white">{t("profileDetails")}</div>;
 };
 
 export default ProfileDetails;

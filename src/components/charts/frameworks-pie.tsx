@@ -10,7 +10,7 @@ const FrameworksPie: React.FC<Props> = ({ data }) => {
   }
 
   return (
-    <div className="h-[300px] w-full lg:max-w-sm">
+    <div className="h-[300px] w-full lg:max-w-sm ">
       <ResponsivePie
         data={data}
         margin={{ top: 20, right: 60, bottom: 20, left: 60 }}
@@ -25,7 +25,7 @@ const FrameworksPie: React.FC<Props> = ({ data }) => {
           modifiers: [["darker", 0.2]],
         }}
         arcLinkLabelsSkipAngle={10}
-        arcLinkLabelsTextColor="#333333"
+        arcLinkLabelsTextColor="#999999"
         arcLinkLabelsThickness={2}
         arcLinkLabelsColor={{ from: "color" }}
         arcLabelsSkipAngle={10}

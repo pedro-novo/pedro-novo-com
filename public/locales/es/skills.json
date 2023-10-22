@@ -1,0 +1,12 @@
+{
+  "skills": "Competencias",
+  "feSkills": "Conocimientos de Frontend",
+  "feTools": "Herramientas de Frontend",
+  "feNotes": "Notas de Frontend",
+  "beSkills": "Conocimientos de Backend",
+  "beTools": "Herramientas de Backend",
+  "beNotes": "Notas de Backend",
+  "techSkills": "Conocimientos Técnicos",
+  "techTools": "Herramientas Técnicas",
+  "techNotes": "Notas Técnicas"
+}

@@ -5,12 +5,14 @@ import Skills from "../skills/skills";
 import Socials from "../socials/socials";
 import Books from "../books/books";
 import Referrals from "../referrals/referrals";
+import Header from "../header/header";
 
 const Layout: React.FC = () => {
   return (
-    <main>
-      <div className="mx-auto max-w-7xl py-10 xl:px-6 2xl:px-8">
-        <div className="sm:px-6 sm:py-10 lg:px-8 bg-white rounded-sm shadow-lg">
+    <main className="dark:bg-gray-900">
+      <Header />
+      <div className="mx-auto max-w-7xl xl:px-6 2xl:px-8 overflow-hidden">
+        <div className="sm:px-6 lg:px-8 bg-white dark:bg-gray-900 rounded-sm shadow-lg">
           <Profile />
           <AboutMe />
           <Skills />
