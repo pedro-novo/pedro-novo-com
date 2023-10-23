@@ -12,7 +12,7 @@ const FrameworksPie: React.FC<Props> = ({ data, colors }) => {
   }
 
   return (
-    <div className="h-[300px] w-full lg:max-w-sm ">
+    <div className="h-[300px] w-full">
       <ResponsivePie
         data={data}
         margin={{ top: 20, right: 60, bottom: 20, left: 60 }}

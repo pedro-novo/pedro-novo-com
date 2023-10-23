@@ -16,32 +16,26 @@ const ProfileDetails: React.FC = () => {
       <h4 className="text-xl text-gray-900 font-bold dark:text-white">{t("profileDetails")}</h4>
       <div className="mt-4">
         <div className="sm:flex sm:py-2">
-          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-48">{t("name")}</dt>
-          <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:ml-6 sm:mt-0 dark:text-white">Pedro Novo</dd>
+          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-32">{t("name")}</dt>
+          <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 dark:text-white">Pedro Novo</dd>
         </div>
         <div className="sm:flex sm:py-2">
-          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-48">{t("email")}</dt>
-          <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:ml-6 sm:mt-0 dark:text-white">
-            pedro.novo.93@gmail.com
-          </dd>
+          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-32">{t("email")}</dt>
+          <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 dark:text-white">pedro.novo.93@gmail.com</dd>
         </div>
         <div className="sm:flex sm:py-2">
-          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-48">{t("role")}</dt>
-          <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:ml-6 sm:mt-0 dark:text-white">
-            Software Engineer
-          </dd>
+          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-32">{t("role")}</dt>
+          <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 dark:text-white">Software Engineer</dd>
         </div>
         <div className="sm:flex sm:py-2">
-          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-48">{t("company")}</dt>
-          <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:ml-6 sm:mt-0 dark:text-white">
-            Critical Techworks
-          </dd>
+          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-32">{t("company")}</dt>
+          <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 dark:text-white">Critical Techworks</dd>
         </div>
         <div className="sm:flex sm:py-2">
-          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-48">{t("socials")}</dt>
+          <dt className="text-sm font-medium text-gray-500 sm:w-40 sm:flex-shrink-0 lg:w-32">{t("socials")}</dt>
           <div className="flex items-center justify-between gap-4">
-            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:ml-6 sm:mt-0 dark:text-white">LinkedIn</dd>
-            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:ml-6 sm:mt-0 dark:text-white">GitHub</dd>
+            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 dark:text-white">LinkedIn</dd>
+            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 dark:text-white">GitHub</dd>
           </div>
         </div>
       </div>

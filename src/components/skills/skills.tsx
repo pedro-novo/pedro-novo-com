@@ -66,7 +66,7 @@ const Skills: React.FC = () => {
         {specificSkills.map(({ skillsTitle, skills, toolsTitle, tools, notesTitle }) => (
           <div
             key={skillsTitle}
-            className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 lg:grid-cols-2"
+            className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 lg:grid-cols-2 place-items-center"
           >
             <div className="w-full">
               <h5 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">

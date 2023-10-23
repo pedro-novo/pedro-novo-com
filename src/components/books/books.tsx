@@ -7,7 +7,7 @@ const Books: React.FC = () => {
   return (
     <section>
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">{t("books")}</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl dark:text-white">{t("books")}</h2>
       </div>
     </section>
   );
