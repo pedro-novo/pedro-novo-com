@@ -79,18 +79,20 @@ const Skills: React.FC = () => {
 
   return (
     <section id="skills">
-      <div className="bg-[#ffeedb] py-12 dark:bg-gray-900">
+      <div className="bg-[#ffeedb] py-12">
         <div className="mx-auto max-w-7xl px-10 sm:px-20 grid grid-cols-1 gap-x-12 gap-y-20 lg:grid-cols-2">
           <div className="col-span-2">
-            <h1 className="text-[#61C9A8] text-5xl text-right font-black tracking-[.25em] uppercase">Skills</h1>
+            <h1 className="text-[#61C9A8] text-center text-4xl font-black tracking-[.25em] uppercase sm:text-right">
+              Skills
+            </h1>
           </div>
           <div className="col-span-2 flex items-center justify-center gap-6">
             {tabButtons.map((button) => (
               <div key={button} className="flex items-center justify-center gap-4">
-                {tabButton === button ? <GreenArrow /> : null}
+                {tabButton === button ? <GreenArrow width="30" /> : null}
                 <button
                   className={classNames(
-                    "bg-none border-none text-[#61C9A8] text-sm uppercase tracking-[.25em] hover:text-[#69d9b6] first-letter:uppercase",
+                    "bg-none border-none text-[#61C9A8] text-xs uppercase tracking-[.25em] hover:text-[#69d9b6] first-letter:uppercase",
                     tabButton === button && "font-bold"
                   )}
                   onClick={() => onChangeTab(button)}

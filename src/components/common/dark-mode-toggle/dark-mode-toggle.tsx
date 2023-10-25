@@ -28,7 +28,7 @@ const DarkModeToggle: React.FC = () => {
       </div>
       <div
         className={classNames(
-          "absolute -right-2 -top-10 flex w-12 flex-col items-center justify-center gap-2 overflow-hidden rounded-md bg-gray-100 py-2 transition-all delay-100 ease-in-out duration-200 dark:bg-gray-800",
+          "absolute -right-2 -top-10 flex w-12 flex-col items-center justify-center gap-2 overflow-hidden rounded-md bg-gray-100 py-2 transition-all delay-100 ease-in-out duration-200",
           !isOpen ? "max-h-0 -translate-y-20 opacity-0" : "max-h-40 translate-y-24 opacity-100"
         )}
       >
@@ -36,7 +36,7 @@ const DarkModeToggle: React.FC = () => {
           <div
             key={value}
             onClick={() => onChangeTheme(value)}
-            className="h-8 w-8 cursor-pointer text-gray-400 hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-400"
+            className="h-8 w-8 cursor-pointer text-gray-400 hover:text-gray-600"
           >
             {currentTheme[value]}
           </div>

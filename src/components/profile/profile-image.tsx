@@ -6,7 +6,7 @@ const ProfileImage: React.FC = () => {
     <img
       src="https://media.licdn.com/dms/image/C4E03AQGKj28vvVC_6g/profile-displayphoto-shrink_400_400/0/1570056222551?e=1703721600&v=beta&t=eHW3WVOtyBDMeKgRRsB63bh3rbhAS2QES5inTO41PNE"
       alt="profile"
-      className="inline-block w-full max-w-xl rounded-full dark:border-gray-600"
+      className="inline-block w-full max-w-xl rounded-full"
     />
   );
 };

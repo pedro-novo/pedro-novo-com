@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 
-import HeroArrow from "./hero-arrow";
 import HeroContent from "./hero-content";
 import HeroHeader from "./hero-header";
 

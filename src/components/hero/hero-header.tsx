@@ -44,7 +44,7 @@ const HeroHeader: React.FC = () => {
           ))}
         </div>
       </nav>
-      <MobileNav isOpen={mobileMenuOpen} navigation={navigation} closeSibebar={() => setMobileMenuOpen(false)} />
+      <MobileNav isOpen={mobileMenuOpen} navigation={navigation} onCloseSidebar={() => setMobileMenuOpen(false)} />
     </header>
   );
 };
