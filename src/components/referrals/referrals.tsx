@@ -78,11 +78,6 @@ const Referrals: React.FC = () => {
             <h2 className="text-[#61C9A8] text-4xl text-center font-black tracking-[.25em] uppercase sm:text-left">
               {t("referrals")}
             </h2>
-            <p className="mt-4 text-base leading-8 text-gray-600">
-              In the Referrals section, colleagues share their firsthand experiences working with me. Their feedback
-              showcases the positive collaboration, teamwork, and successful outcomes we achieved together. These
-              testimonials offer a glimpse into the strong professional connections I build and the trust I inspire.
-            </p>
           </div>
           <ul
             role="list"
