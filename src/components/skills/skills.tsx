@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import { feSkills, beSkills, techSkills } from "@/data/skills";
 import { feTools, beTools, techTools } from "@/data/frameworks";
 import { useTranslation } from "next-i18next";
-import { useDarkModeContext } from "../dark-mode-toggle/context/dark-mode-context";
+import { useDarkModeContext } from "../common/dark-mode-toggle/context/dark-mode-context";
 
 const SkillsBar = dynamic(() => import("../charts/skills-bar").then((module) => module.default), {
   ssr: false,

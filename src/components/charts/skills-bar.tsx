@@ -9,7 +9,7 @@ interface Props {
 
 const SkillsBar: React.FC<Props> = ({ data, color }) => {
   return (
-    <div className="h-[300px] w-full">
+    <div className="h-[300px]">
       <ResponsiveBar
         data={data}
         keys={["level"]}

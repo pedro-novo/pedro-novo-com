@@ -1,6 +1,6 @@
 import React from "react";
-import DarkModeToggle from "../dark-mode-toggle/dark-mode-toggle";
-import FlagDropdown from "../flag-dropdown/flag-dropdown";
+import DarkModeToggle from "../common/dark-mode-toggle/dark-mode-toggle";
+import FlagDropdown from "../common/flag-dropdown/flag-dropdown";
 
 const Header: React.FC = () => {
   return (

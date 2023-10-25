@@ -6,14 +6,16 @@ import Socials from "../socials/socials";
 import Books from "../books/books";
 import Referrals from "../referrals/referrals";
 import Header from "../header/header";
-import { DarkModeContextProvider } from "../dark-mode-toggle/context/dark-mode-context";
+import { DarkModeContextProvider } from "../common/dark-mode-toggle/context/dark-mode-context";
 import Hero from "../hero/hero";
+import SkillsSection from "../skills/skills-section";
 
 const Layout: React.FC = () => {
   return (
     <DarkModeContextProvider>
       <Hero />
-      <Profile />
+      <AboutMe />
+      <SkillsSection />
       {/* <main className="dark:bg-gray-900">
         <Header />
         <div className="mx-auto max-w-7xl xl:px-6 2xl:px-8 overflow-hidden">

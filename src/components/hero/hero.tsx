@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   return (
     <div className="bg-gray-900 h-screen">
       <div className="relative h-screen isolate overflow-hidden">
-        <div className="absolute h-screen w-full bg-[#FFEEDB] opacity-30"></div>
+        <div className="absolute h-screen w-full bg-[#FFEEDB] opacity-20"></div>
         <HeroHeader />
         <img src="./hero_bg.jpg" alt="hero" className="absolute inset-0 -z-10 h-full w-full object-cover" />
         <HeroContent />
