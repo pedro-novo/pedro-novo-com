@@ -57,8 +57,9 @@ const people = [
     company: "ING",
     imageUrl:
       "https://media.licdn.com/dms/image/C4D03AQFPBWXO-AvQpw/profile-displayphoto-shrink_400_400/0/1617751299753?e=1703721600&v=beta&t=wEu1WG-HYmJwtNkhOehH1u_mYXKUudsfOeBPBHxsq_0",
-    feedback:
-      "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+    feedback: `It's been a pleasure working with you on our full-stack project. I should mention that initially, I was aware of your relatively short experience as a developer, but I was surprised by your strong understanding of coding practices, your proficiency with React and TypeScript, and your knowledge of component libraries such as MUI and Tailwind. 
+      What stood out the most was the fact that as soon as you joined the project you identified anomalies that would make the project difficult to scale and maintain in the future, and from this came your initiative to rebuild the UI from scratch, addressing these issues and also adding a personal touch to create user interfaces that would take it to the next level.
+      I must thank you for the suggestion you gave me when I read the book "The Tao of React", as you warned me of some bad practices and coding habits I had that were affecting the quality of the code I was delivering. Your guidance has been fundamental to my growth as a developer and the growth of the project, and for that I thank you very much.`,
     twitterUrl: "#",
     linkedinUrl: "https://www.linkedin.com/in/pedro-areal-torres/",
     companyUrl: "https://www.ing.com/Home.htm",
