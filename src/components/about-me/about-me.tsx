@@ -22,7 +22,9 @@ const AboutMe: React.FC = () => {
               </a>
             </div>
           </div>
-          <ProfileImage />
+          <div className="mx-auto lg:my-auto">
+            <ProfileImage />
+          </div>
         </div>
       </div>
     </section>
