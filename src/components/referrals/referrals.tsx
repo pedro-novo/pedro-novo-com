@@ -71,7 +71,7 @@ const Referrals: React.FC = () => {
   const { t } = useTranslation("referrals");
 
   return (
-    <div className="bg-white py-24 md:py-32 lg:py-40 dark:bg-gray-900">
+    <div className="bg-white py-12 dark:bg-gray-900">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8">
         <div className="mx-auto lg:mx-0">
           <h2 className="text-[#61C9A8] text-5xl text-left font-black tracking-[.25em] uppercase">{t("referrals")}</h2>
