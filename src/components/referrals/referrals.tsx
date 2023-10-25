@@ -74,9 +74,7 @@ const Referrals: React.FC = () => {
     <div className="bg-white py-24 md:py-32 lg:py-40 dark:bg-gray-900">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8">
         <div className="mx-auto lg:mx-0">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl dark:text-white">
-            {t("referrals")}
-          </h2>
+          <h2 className="text-[#61C9A8] text-5xl text-left font-black tracking-[.25em] uppercase">{t("referrals")}</h2>
           <p className="mt-4 text-base leading-8 text-gray-600 dark:text-gray-200">
             In the Referrals section, colleagues share their firsthand experiences working with me. Their feedback
             showcases the positive collaboration, teamwork, and successful outcomes we achieved together. These

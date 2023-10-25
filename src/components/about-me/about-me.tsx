@@ -8,7 +8,7 @@ const AboutMe: React.FC = () => {
   const { t } = useTranslation("about-me");
 
   return (
-    <section>
+    <section id="about">
       <div className="bg-[#ffeedb] py-24 md:py-32 dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-10 sm:px-20 grid grid-cols-1 gap-x-12 gap-y-20 lg:grid-cols-2">
           <div className="max-w-2xl">

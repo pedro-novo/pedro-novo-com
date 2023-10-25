@@ -24,7 +24,7 @@ const HeroContent: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="-mt-[150px] flex items-center justify-center flex-col animate-pulse">
+      <div className="absolute bottom-14 left-[50%] -translate-x-[50%] flex items-center justify-center flex-col animate-pulse">
         <h6 className="text-xs font-thin text-white tracking-widest rotate-90">Scroll</h6>
         <HeroArrow height="30" fill="white" />
       </div>

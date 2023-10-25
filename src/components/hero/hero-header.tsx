@@ -4,9 +4,9 @@ import { Bars3Icon } from "@heroicons/react/24/outline";
 import MobileNav from "./mobile-nav";
 
 const navigation = [
-  { name: "About me", href: "#" },
-  { name: "Skills", href: "#" },
-  { name: "Referrals", href: "#" },
+  { name: "About me", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Referrals", href: "#referrals" },
   { name: "Portfolio", href: "#" },
 ];
 
@@ -34,7 +34,11 @@ const HeroHeader: React.FC = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm uppercase font-semibold leading-6 text-white">
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-sm uppercase font-semibold leading-6 text-white hover:text-[#61C9A8]"
+            >
               {item.name}
             </a>
           ))}
