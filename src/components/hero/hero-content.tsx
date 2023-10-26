@@ -11,11 +11,13 @@ const HeroContent: React.FC = () => {
   return (
     <>
       <div className="absolute top-0 left-[50%] -translate-x-[50%] h-screen w-full flex items-center justify-center px-8 py-32 sm:py-48 lg:py-56">
-        <div className="max-w-lg flex items-center justify-center flex-col lg:max-w-2xl">
-          <h1 className="text-3xl font-bold tracking-normal text-white sm:text-4xl lg:text-5xl">
-            {t("messageOne")} <span className="underline">{t("messageTwo")}</span> {t("messageThree")}{" "}
-            <span className="text-[#61C9A8] font-extrabold">{t("messageFour")}</span>{" "}
-          </h1>
+        <div className="mx-auto max-w-lg flex items-center justify-center flex-col lg:max-w-2xl">
+          <div className="pl-4 lg:pl-0">
+            <h1 className="text-xl text-left font-bold tracking-normal text-white xs:text-2xl sm:text-4xl lg:text-5xl">
+              {t("messageOne")} <span className="underline">{t("messageTwo")}</span> {t("messageThree")}{" "}
+              <span className="text-[#61C9A8] font-extrabold">{t("messageFour")}</span>{" "}
+            </h1>
+          </div>
           <HeroArrow height="65" fill="white" />
           <div className="mt-10 flex items-center justify-center">
             <a
