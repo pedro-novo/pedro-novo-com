@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import GreenArrow from "../common/icons/green-arrow/green-arrow";
 import classNames from "classnames";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const SkillsBar = dynamic(() => import("../charts/skills-bar").then((module) => module.default), {
   ssr: false,
@@ -52,24 +52,24 @@ const Skills: React.FC = () => {
     { skillsTitle: string; toolsTitle: string; skillsComponent: React.ReactNode; toolsComponent: React.ReactNode }
   > = {
     frontend: {
-      skillsTitle: "Frontend Skills",
-      toolsTitle: "Frontend Tools",
+      skillsTitle: "feSkills",
+      toolsTitle: "feTools",
       skillsComponent: <SkillsBar data={feSkills} color={"#61C9A8"} />,
       toolsComponent: (
         <FrameworksPie data={feTools} colors={["#61C9A8", "#86e4c7", "#a7efd9", "#c5f6e7", "#d7f3eb", "#e8efed"]} />
       ),
     },
     backend: {
-      skillsTitle: "Backend Skills",
-      toolsTitle: "Backend Skills",
+      skillsTitle: "beSkills",
+      toolsTitle: "beTools",
       skillsComponent: <SkillsBar data={beSkills} color={"#61C9A8"} />,
       toolsComponent: (
         <FrameworksPie data={beTools} colors={["#61C9A8", "#86e4c7", "#a7efd9", "#c5f6e7", "#d7f3eb", "#e8efed"]} />
       ),
     },
     technical: {
-      skillsTitle: "Technical Skills",
-      toolsTitle: "Technical Skills",
+      skillsTitle: "techSkills",
+      toolsTitle: "techSkills",
       skillsComponent: <SkillsBar data={techSkills} color={"#61C9A8"} />,
       toolsComponent: (
         <FrameworksPie data={techTools} colors={["#61C9A8", "#86e4c7", "#a7efd9", "#c5f6e7", "#d7f3eb", "#e8efed"]} />
@@ -83,7 +83,7 @@ const Skills: React.FC = () => {
         <div className="mx-auto max-w-7xl px-10 sm:px-20 grid grid-cols-1 gap-x-12 gap-y-20 lg:grid-cols-2">
           <div className="col-span-2">
             <h1 className="text-[#61C9A8] text-center text-4xl font-black tracking-[.25em] uppercase sm:text-right">
-              Skills
+              {t("skills")}
             </h1>
           </div>
           <div className="col-span-2 flex items-center justify-center gap-6">

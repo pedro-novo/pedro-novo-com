@@ -2,6 +2,10 @@
 import React, { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import GithubIcon from "../common/icons/github-icon";
+import LinkedInIcon from "../common/icons/linkedin-icon";
+import { useTranslation } from "next-i18next";
+import FlagDropdown from "../common/flag-dropdown/flag-dropdown";
 
 interface Props {
   isOpen: boolean;
@@ -10,6 +14,8 @@ interface Props {
 }
 
 const MobileNav: React.FC<Props> = ({ isOpen, navigation, onCloseSidebar }) => {
+  const { t } = useTranslation("hero");
+
   return (
     <Transition.Root show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-40 lg:hidden" onClose={onCloseSidebar}>
@@ -65,11 +71,26 @@ const MobileNav: React.FC<Props> = ({ isOpen, navigation, onCloseSidebar }) => {
                         onClick={onCloseSidebar}
                         className="text-sm uppercase font-semibold leading-6 text-white hover:text-[#61C9A8]"
                       >
-                        {item.name}
+                        {t(item.name)}
                       </a>
                     ))}
+                    <FlagDropdown />
                   </div>
                 </nav>
+                <div className="mb-24 flex flex-col items-center justify-center gap-6">
+                  <div className="w-[80%] border boder-white"></div>
+                  <h5 className="text-sm font-thin text-white tracking-[.25em] whitespace-nowrap">
+                    {t("checkSocials")}
+                  </h5>
+                  <div className="flex gap-6">
+                    <a href="https://github.com/pedro-novo" target="_blank">
+                      <GithubIcon />
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-novo-teixeira" target="_blank">
+                      <LinkedInIcon />
+                    </a>
+                  </div>
+                </div>
               </div>
             </Dialog.Panel>
           </Transition.Child>

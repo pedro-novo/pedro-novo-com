@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import ProfileImage from "../profile/profile-image";
-import HeroArrow from "../hero/hero-arrow";
 import GreenArrow from "../common/icons/green-arrow/green-arrow";
 
 const AboutMe: React.FC = () => {
@@ -17,8 +16,12 @@ const AboutMe: React.FC = () => {
             <p className="mt-2 text-base leading-8 text-gray-800">{t("paragraphTwo")}</p>
             <div className="mt-10 flex items-center justify-start gap-6">
               <GreenArrow />
-              <a href="#" className="text-[#61C9A8] text-sm uppercase font-bold underline tracking-widest">
-                Download resume
+              <a
+                href="./pedro_teixeira_resume_2023.pdf"
+                download="Resume"
+                className="text-[#61C9A8] text-sm uppercase font-bold underline tracking-widest"
+              >
+                {t("downloadResume")}
               </a>
             </div>
           </div>

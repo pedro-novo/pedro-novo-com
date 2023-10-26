@@ -2,16 +2,18 @@
 import React, { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import MobileNav from "./mobile-nav";
+import FlagDropdown from "../common/flag-dropdown/flag-dropdown";
+import { useTranslation } from "next-i18next";
 
 const navigation = [
-  { name: "About me", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Referrals", href: "#referrals" },
-  { name: "Portfolio", href: "#" },
+  { name: "aboutMe", href: "#about" },
+  { name: "skills", href: "#skills" },
+  { name: "referrals", href: "#referrals" },
 ];
 
 const HeroHeader: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation("hero");
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -39,9 +41,10 @@ const HeroHeader: React.FC = () => {
               href={item.href}
               className="text-sm uppercase font-semibold leading-6 text-white hover:text-[#61C9A8]"
             >
-              {item.name}
+              {t(item.name)}
             </a>
           ))}
+          <FlagDropdown />
         </div>
       </nav>
       <MobileNav isOpen={mobileMenuOpen} navigation={navigation} onCloseSidebar={() => setMobileMenuOpen(false)} />

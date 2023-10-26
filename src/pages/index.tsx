@@ -16,6 +16,8 @@ export async function getStaticProps({ locale }: { locale: string }) {
         "books",
         "referrals",
         "socials",
+        "hero",
+        "footer",
       ])),
       // Will be passed to the page component as props
     },
