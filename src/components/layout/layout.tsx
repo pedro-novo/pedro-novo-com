@@ -5,6 +5,7 @@ import Hero from "../hero/hero";
 import Skills from "../skills/skills";
 import Footer from "../footer/footer";
 import Referrals from "../referrals/referrals";
+import Books from "../books/books";
 
 const Layout: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Layout: React.FC = () => {
       <Hero />
       <AboutMe />
       <Skills />
+      <Books />
       <Referrals />
       <Footer />
     </DarkModeContextProvider>

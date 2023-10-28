@@ -8,6 +8,7 @@ import { useTranslation } from "next-i18next";
 const navigation = [
   { name: "aboutMe", href: "#about" },
   { name: "skills", href: "#skills" },
+  { name: "books", href: "#books" },
   { name: "referrals", href: "#referrals" },
 ];
 
