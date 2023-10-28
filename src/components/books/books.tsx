@@ -8,7 +8,7 @@ const books = [
     id: 1,
     title: "Clean Code",
     href: "https://www.amazon.es/-/pt/dp/0132350882/ref=sr_1_3?keywords=clean+code&qid=1698390547&sr=8-3",
-    takeaways: ["DRY", "KISS", "Maningful Naming"],
+    takeaways: ["DRY", "KISS", "Meaningful Naming"],
     imageUrl: "https://m.media-amazon.com/images/I/51E2055ZGUL._SL1000_.jpg",
     date: "Aug 1, 2008",
     datetime: "2008-08-01",
@@ -105,7 +105,7 @@ const Books: React.FC = () => {
                 <div className="flex items-center justify-center">
                   <img src={book.imageUrl} alt={book.title} className="w-[220px] h-[280px] object-cover" />
                 </div>
-                <div className="w-full px-4 lg:w-1/2 lg:px-0">
+                <div className="mt-4 w-full px-4 lg:w-1/2 lg:px-0 lg:mt-0">
                   <h1 className="text-gray-800 text-lg uppercase font-bold">{book.title}</h1>
                   <div className="flex flex-col gap-4">
                     {book.authors.map((author) => (
