@@ -1,8 +1,16 @@
 import Layout from "@/components/layout/layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Head from "next/head";
 
 export default function Home() {
-  return <Layout />;
+  return (
+    <>
+      <Head>
+        <title>Pedro Novo</title>
+      </Head>
+      <Layout />
+    </>
+  );
 }
 
 export async function getStaticProps({ locale }: { locale: string }) {
