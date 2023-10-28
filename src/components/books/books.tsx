@@ -98,13 +98,16 @@ const Books: React.FC = () => {
           </div>
           <div className="py-12 grid grid-cols-1 gap-x-4 gap-y-20 sm:py-24 md:grid-cols-2">
             {books.map((book) => (
-              <article key={book.id} className="bg-white px-8 py-8 rounded border border-gray-600">
+              <article
+                key={book.id}
+                className="bg-white px-4 py-8 flex flex-col lg:flex-row sm:gap-8 rounded border border-gray-600"
+              >
                 <div className="flex items-center justify-center">
-                  <img src={book.imageUrl} alt={book.title} className="w-[230px] h-[300px] object-cover" />
+                  <img src={book.imageUrl} alt={book.title} className="w-[220px] h-[280px] object-cover" />
                 </div>
-                <div className="py-4">
+                <div className="w-full px-4 lg:w-1/2 lg:px-0">
                   <h1 className="text-gray-800 text-lg uppercase font-bold">{book.title}</h1>
-                  <div className="flex flex-col gap-4 lg:flex-row">
+                  <div className="flex flex-col gap-4">
                     {book.authors.map((author) => (
                       <div key={author.name} className=" flex items-center gap-x-4">
                         <img src={author.imageUrl} alt="" className="h-6 w-6 rounded-full bg-gray-50" />
@@ -117,21 +120,23 @@ const Books: React.FC = () => {
                       </div>
                     ))}
                   </div>
-                </div>
 
-                <h4 className="mt-2 text-gray-500 text-xs font-bold uppercase">{t("keyTakeaways")}</h4>
-                <ul className="mt-2 ml-2 flex flex-col gap-2">
-                  {book.takeaways.map((take) => (
-                    <li key={take}>
-                      <span className="inline-flex items-center gap-x-1.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-                        <svg className="h-1.5 w-1.5 fill-gray-400" viewBox="0 0 6 6" aria-hidden="true">
-                          <circle cx={3} cy={3} r={3} />
-                        </svg>
-                        {take}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                  <div className="w-full mt-2 border border-gray-200" />
+
+                  <h4 className="mt-6 text-gray-500 text-xs font-bold uppercase">{t("keyTakeaways")}</h4>
+                  <ul className="mt-2 ml-2 flex flex-col gap-2">
+                    {book.takeaways.map((take) => (
+                      <li key={take}>
+                        <span className="inline-flex items-center gap-x-1.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+                          <svg className="h-1.5 w-1.5 fill-gray-400" viewBox="0 0 6 6" aria-hidden="true">
+                            <circle cx={3} cy={3} r={3} />
+                          </svg>
+                          {take}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </article>
             ))}
           </div>
