@@ -18,18 +18,18 @@ const people = [
     linkedinUrl: "https://www.linkedin.com/in/ricardojorgexyz/",
     companyUrl: "https://www.omegasys.eu/",
   },
-  {
-    name: "Nuno Casteleira",
-    role: "Mid Software Engineer",
-    company: "Critical TechWorks",
-    imageUrl:
-      "https://media.licdn.com/dms/image/C4D03AQE3ODIPrXp_8A/profile-displayphoto-shrink_400_400/0/1603644633438?e=1703721600&v=beta&t=rMsrsIQkvz1oQZ4mXPex6gJFnqakxcmqMBY4phWThkU",
-    feedback:
-      "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
-    twitterUrl: "#",
-    linkedinUrl: "https://www.linkedin.com/in/nunocasteleira/",
-    companyUrl: "https://www.criticaltechworks.com/",
-  },
+  // {
+  //   name: "Nuno Casteleira",
+  //   role: "Mid Software Engineer",
+  //   company: "Critical TechWorks",
+  //   imageUrl:
+  //     "https://media.licdn.com/dms/image/C4D03AQE3ODIPrXp_8A/profile-displayphoto-shrink_400_400/0/1603644633438?e=1703721600&v=beta&t=rMsrsIQkvz1oQZ4mXPex6gJFnqakxcmqMBY4phWThkU",
+  //   feedback:
+  //     "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
+  //   twitterUrl: "#",
+  //   linkedinUrl: "https://www.linkedin.com/in/nunocasteleira/",
+  //   companyUrl: "https://www.criticaltechworks.com/",
+  // },
   {
     name: "Joana Valente",
     role: "Junior Software Engineer",
