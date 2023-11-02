@@ -82,7 +82,7 @@ const Skills: React.FC = () => {
       <div className="bg-[#ffeedb] py-12 sm:py-24 lg:py-36">
         <div className="mx-auto max-w-7xl px-10 sm:px-20 grid grid-cols-1 gap-x-12 gap-y-20 lg:grid-cols-2">
           <div className="col-span-2">
-            <h1 className="text-[#61C9A8] text-center text-3xl font-black tracking-[.25em] uppercase sm:text-right sm:text-4xl">
+            <h1 className="text-[#61C9A8] text-center text-2xl font-black tracking-[.25em] uppercase sm:text-right sm:text-4xl">
               {t("skills")}
             </h1>
           </div>

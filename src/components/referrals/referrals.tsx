@@ -81,7 +81,7 @@ const Referrals: React.FC = () => {
       <div className="bg-white py-12">
         <div className="mx-auto max-w-7xl px-10 sm:px-20 grid grid-cols-1 gap-x-12 gap-y-20 lg:grid-cols-2">
           <div className="mx-auto lg:mx-0">
-            <h2 className="text-[#61C9A8] text-3xl text-center font-black tracking-[.25em] uppercase sm:text-left sm:text-4xl">
+            <h2 className="text-[#61C9A8] text-2xl text-center font-black tracking-[.25em] uppercase sm:text-left sm:text-4xl">
               {t("referrals")}
             </h2>
           </div>

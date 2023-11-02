@@ -92,7 +92,7 @@ const Books: React.FC = () => {
       <div className="bg-gray-900 py-12">
         <div className="mx-auto max-w-7xl px-10">
           <div className="mx-auto lg:mx-0">
-            <h2 className="text-white text-3xl text-center font-black tracking-[.25em] uppercase  sm:text-4xl">
+            <h2 className="text-white text-2xl text-center font-black tracking-[.25em] uppercase  sm:text-4xl">
               {t("books")}
             </h2>
           </div>
