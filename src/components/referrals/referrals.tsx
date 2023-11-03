@@ -50,7 +50,7 @@ const people = [
       "https://media.licdn.com/dms/image/C4D03AQE54-YbahaCdg/profile-displayphoto-shrink_400_400/0/1600181599415?e=1703721600&v=beta&t=p26R0X6W-rDk28GFxe7NRk5cglPK4d1tSQ1VUsiKE_s",
     feedback: `I endorse collaborating with Pedro for his remarkable qualities as a team member. What sets Pedro apart is not just his dedication, professionalism, and strong work ethic, but also his unwavering empathy and caring nature. He's the kind of colleague who not only excels professionally but genuinely cares about the well-being of those he works with.
     Pedro's dedication to our team goes beyond the ordinary. He consistently contributes innovative ideas, not just for the sake of progress, but because he genuinely wants to see each of us thrive. His seamless collaboration style and positive attitude create an atmosphere of support that elevates every project.
-    Pedro's ability to adapt to challenging situations is a testament to his character.. He's not just a skilled professional; he's a true team player who adds a personal touch to everything he does.
+    Pedro's ability to adapt to challenging situations is a testament to his character. He's not just a skilled professional, he's a true team player who adds a personal touch to everything he does.
     `,
     twitterUrl: "#",
     linkedinUrl: "https://www.linkedin.com/in/mariaines-mrmelo/",
