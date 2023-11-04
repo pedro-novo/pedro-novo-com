@@ -18,18 +18,27 @@ const people = [
     linkedinUrl: "https://www.linkedin.com/in/ricardojorgexyz/",
     companyUrl: "https://www.omegasys.eu/",
   },
-  // {
-  //   name: "Nuno Casteleira",
-  //   role: "Mid Software Engineer",
-  //   company: "Critical TechWorks",
-  //   imageUrl:
-  //     "https://media.licdn.com/dms/image/C4D03AQE3ODIPrXp_8A/profile-displayphoto-shrink_400_400/0/1603644633438?e=1703721600&v=beta&t=rMsrsIQkvz1oQZ4mXPex6gJFnqakxcmqMBY4phWThkU",
-  //   feedback:
-  //     "Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.",
-  //   twitterUrl: "#",
-  //   linkedinUrl: "https://www.linkedin.com/in/nunocasteleira/",
-  //   companyUrl: "https://www.criticaltechworks.com/",
-  // },
+  {
+    name: "Nuno Casteleira",
+    role: "Mid Software Engineer",
+    company: "Critical TechWorks",
+    imageUrl:
+      "https://media.licdn.com/dms/image/C4D03AQE3ODIPrXp_8A/profile-displayphoto-shrink_400_400/0/1603644633438?e=1703721600&v=beta&t=rMsrsIQkvz1oQZ4mXPex6gJFnqakxcmqMBY4phWThkU",
+    feedback: `I was fortunate enough to meet Pedro in his early days as a Software Developer.
+    His most proeminent characteristic is his curiosity.
+    He started contributing from the get-go, but he wasn't just putting down code; he would question and propose his points of view, with some bringing a new look into some problems.
+    
+    He knows his way around. He thinks critically and works as a teammate.
+    Whenever his opinions diverge, he presents proper arguments, knowing when they are refuted, and follows the chosen strategy.
+    
+    I know I can always share my thoughts about new developments on the frontend with him, because he, too, follows along with the trends. We enjoy sharing our passions of React, Next.js and Tailwind.
+    
+    Pedro has a keen eye for detail, and a particular interest on optimization. He's notoriously well versed on the frontend, but knows his way around the backend and DevOps.
+    `,
+    twitterUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/nunocasteleira/",
+    companyUrl: "https://www.criticaltechworks.com/",
+  },
   {
     name: "Joana Valente",
     role: "Junior Software Engineer",
