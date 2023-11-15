@@ -5,7 +5,7 @@ export const labelDict = (value: number) => {
     case 2:
       return "Mid";
     case 3:
-      return "Expert";
+      return "Proficient";
     case 0:
     default:
       return "";

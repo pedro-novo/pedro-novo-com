@@ -14,7 +14,7 @@ const SkillsBar: React.FC<Props> = ({ data, color }) => {
         data={data}
         keys={["level"]}
         indexBy="skill"
-        margin={{ top: 10, right: 20, bottom: 30, left: 90 }}
+        margin={{ top: 10, right: 30, bottom: 30, left: 90 }}
         padding={0.3}
         groupMode="grouped"
         layout="horizontal"
