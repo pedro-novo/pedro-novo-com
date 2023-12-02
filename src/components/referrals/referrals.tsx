@@ -14,7 +14,6 @@ const people = [
     I'm proud to have witnessed Pedro pick up programming and engineering on his own and carve out a career for himself. I personally taught him the fundamentals of Frontend development, and now he is coming back and teaching new patterns and practices to me.
     He did not stop there and made sure to also learn tools from end to end and is totally able to develop a high quality fullstack application by himself.
     I've known him for many years, we've been team mates and champions outside the office and all that synergy still carries over for everything we do together. He is my right-hand man for Frontend projects, and he is my future CTO.`,
-    twitterUrl: "#",
     linkedinUrl: "https://www.linkedin.com/in/ricardojorgexyz/",
     companyUrl: "https://www.omegasys.eu/",
   },
@@ -35,7 +34,6 @@ const people = [
     
     Pedro has a keen eye for detail, and a particular interest on optimization. He's notoriously well versed on the frontend, but knows his way around the backend and DevOps.
     `,
-    twitterUrl: "#",
     linkedinUrl: "https://www.linkedin.com/in/nunocasteleira/",
     companyUrl: "https://www.criticaltechworks.com/",
   },
@@ -47,7 +45,6 @@ const people = [
       "https://media.licdn.com/dms/image/D4D03AQFXL4eh305mwA/profile-displayphoto-shrink_400_400/0/1669026531833?e=1703721600&v=beta&t=NRr7X8yPy_os6BjT4a5bw8eARieREJZeBO6xWvUw6o8",
     feedback:
       "I have been fortunate to have had the opportunity to work alongside Pedro for the past year. He really is one of the hardest people to find: someone who is able to create a welcoming, positive, and enjoyable work environment. Throughout working with Pedro, I have seen first hand his dedication to providing the best possible solutions, as well as a remarkable capability not only to learn from others, but also to share his knowledge with colleagues about various topics. He truly stands out as an exceptional team member, and I consider him a rare gem in our field.",
-    twitterUrl: "#",
     linkedinUrl: "https://www.linkedin.com/in/joana-pais-valente/",
     companyUrl: "https://www.criticaltechworks.com/",
   },
@@ -61,7 +58,6 @@ const people = [
     Pedro's dedication to our team goes beyond the ordinary. He consistently contributes innovative ideas, not just for the sake of progress, but because he genuinely wants to see each of us thrive. His seamless collaboration style and positive attitude create an atmosphere of support that elevates every project.
     Pedro's ability to adapt to challenging situations is a testament to his character. He's not just a skilled professional, he's a true team player who adds a personal touch to everything he does.
     `,
-    twitterUrl: "#",
     linkedinUrl: "https://www.linkedin.com/in/mariaines-mrmelo/",
     companyUrl: "https://www.criticaltechworks.com/",
   },
@@ -77,7 +73,6 @@ const people = [
     Once you have Pedro as a resource, you won't be able to keep him out of your ideas or thoughts, whether they are related to UI/UX, API development or organizing a data model. His pragmatic approach always manages to raise questions that encourage you to think about what needs to be redefined or improved.
         
     Pedro has qualities that will ensure his success in the long run: he consistently produces work of a high standard and he is driven to learn everything he can.`,
-    twitterUrl: "#",
     linkedinUrl: "https://www.linkedin.com/in/pedro-areal-torres/",
     companyUrl: "https://www.ing.com/Home.htm",
   },
@@ -123,19 +118,6 @@ const Referrals: React.FC = () => {
                   {person.feedback}
                 </p>
                 <ul role="list" className="mt-6 flex gap-x-6">
-                  <li>
-                    <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
-                      <span className="sr-only">Twitter</span>
-                      <svg
-                        className="h-5 w-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                      </svg>
-                    </a>
-                  </li>
                   <li>
                     <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
                       <span className="sr-only">LinkedIn</span>
