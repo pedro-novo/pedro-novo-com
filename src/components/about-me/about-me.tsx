@@ -17,7 +17,7 @@ const AboutMe: React.FC = () => {
             <div className="mt-10 flex items-center justify-start gap-6">
               <GreenArrow />
               <a
-                href="./pedro_teixeira_resume_2023.pdf"
+                href="./pedro_novo_resume_2024.pdf"
                 download="Resume"
                 className="text-[#61C9A8] text-sm uppercase font-bold underline tracking-widest"
               >
