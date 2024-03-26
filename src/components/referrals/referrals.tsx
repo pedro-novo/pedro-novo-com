@@ -1,14 +1,18 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { useTranslation } from "next-i18next";
+import pedroTorres from "/pedro-torres.jpg";
+import inesMelo from "/ines-melo.jpg";
+import joanaValente from "/joana-valente.jpg";
+import nunoCasteleira from "/nuno-casteleira.jpg";
+import ricardoJorge from "/ricardo-jorge.jpg";
+import Image from "next/image";
 
 const people = [
   {
     name: "Ricardo Jorge",
     role: "Senior Frontend Engineer",
     company: "OMEGA Systems",
-    imageUrl:
-      "https://media.licdn.com/dms/image/D4E03AQGI1QlImPghAA/profile-displayphoto-shrink_800_800/0/1675606734821?e=1703721600&v=beta&t=N06v_HX5OCeR4qyHyOFPPcvGqRyuXmvK_NRleBEx0zo",
+    imageUrl: "/ricardo-jorge.jpg",
     feedback: `Pedro is the cheerful and light-hearted person that everyone loves to have on the team while also being extremely dedicated and passionate about his craft. When there are problems to be solved or challenges to be overcome you can count on Pedro to carry the hard work, put in however many hours he needs, and still swipe the floor at the end of the day.
     He is a team player on the office and on the field, he understands how to work with others as a unit to reach a common goal. He makes sure that everyone gets a chance to be heard and a chance to speak, facilitating communication across teams and departments, and overall making everyone life's easier.
     I'm proud to have witnessed Pedro pick up programming and engineering on his own and carve out a career for himself. I personally taught him the fundamentals of Frontend development, and now he is coming back and teaching new patterns and practices to me.
@@ -21,8 +25,7 @@ const people = [
     name: "Nuno Casteleira",
     role: "Mid Software Engineer",
     company: "Critical TechWorks",
-    imageUrl:
-      "https://media.licdn.com/dms/image/C4D03AQE3ODIPrXp_8A/profile-displayphoto-shrink_400_400/0/1603644633438?e=1703721600&v=beta&t=rMsrsIQkvz1oQZ4mXPex6gJFnqakxcmqMBY4phWThkU",
+    imageUrl: "/nuno-casteleira.jpg",
     feedback: `I was fortunate enough to meet Pedro in his early days as a Software Developer.
     His most proeminent characteristic is his curiosity.
     He started contributing from the get-go, but he wasn't just putting down code; he would question and propose his points of view, with some bringing a new look into some problems.
@@ -41,8 +44,7 @@ const people = [
     name: "Joana Valente",
     role: "Junior Software Engineer",
     company: "Critical TechWorks",
-    imageUrl:
-      "https://media.licdn.com/dms/image/D4D03AQFXL4eh305mwA/profile-displayphoto-shrink_400_400/0/1669026531833?e=1703721600&v=beta&t=NRr7X8yPy_os6BjT4a5bw8eARieREJZeBO6xWvUw6o8",
+    imageUrl: "/joana-valente.jpg",
     feedback:
       "I have been fortunate to have had the opportunity to work alongside Pedro for the past year. He really is one of the hardest people to find: someone who is able to create a welcoming, positive, and enjoyable work environment. Throughout working with Pedro, I have seen first hand his dedication to providing the best possible solutions, as well as a remarkable capability not only to learn from others, but also to share his knowledge with colleagues about various topics. He truly stands out as an exceptional team member, and I consider him a rare gem in our field.",
     linkedinUrl: "https://www.linkedin.com/in/joana-pais-valente/",
@@ -52,8 +54,7 @@ const people = [
     name: "Inês Melo",
     role: "Junior Software Engineer",
     company: "Critical TechWorks",
-    imageUrl:
-      "https://media.licdn.com/dms/image/C4D03AQE54-YbahaCdg/profile-displayphoto-shrink_400_400/0/1600181599415?e=1703721600&v=beta&t=p26R0X6W-rDk28GFxe7NRk5cglPK4d1tSQ1VUsiKE_s",
+    imageUrl: "/ines-melo.jpg",
     feedback: `I endorse collaborating with Pedro for his remarkable qualities as a team member. What sets Pedro apart is not just his dedication, professionalism, and strong work ethic, but also his unwavering empathy and caring nature. He's the kind of colleague who not only excels professionally but genuinely cares about the well-being of those he works with.
     Pedro's dedication to our team goes beyond the ordinary. He consistently contributes innovative ideas, not just for the sake of progress, but because he genuinely wants to see each of us thrive. His seamless collaboration style and positive attitude create an atmosphere of support that elevates every project.
     Pedro's ability to adapt to challenging situations is a testament to his character. He's not just a skilled professional, he's a true team player who adds a personal touch to everything he does.
@@ -65,8 +66,7 @@ const people = [
     name: "Pedro Torres",
     role: "Mid Software Engineer",
     company: "ING",
-    imageUrl:
-      "https://media.licdn.com/dms/image/C4D03AQFPBWXO-AvQpw/profile-displayphoto-shrink_400_400/0/1617751299753?e=1703721600&v=beta&t=wEu1WG-HYmJwtNkhOehH1u_mYXKUudsfOeBPBHxsq_0",
+    imageUrl: "/pedro-torres.jpg",
     feedback: `Pedro is a forward-thinking developer with a wealth of knowledge.
     When I had the opportunity to work with Pedro, I was aware that his background as a developer was relatively short, but once we started working together, I realized how irrelevant years of experience are.
         
@@ -98,14 +98,14 @@ const Referrals: React.FC = () => {
           >
             {people.map((person) => (
               <li key={person.name}>
-                <img
-                  className="aspect-[3/2] w-20 rounded-2xl object-cover border-2 border-[#61C9A8]"
+                <Image
+                  width={80}
+                  height={40}
                   src={person.imageUrl}
                   alt={person.name}
+                  className="aspect-[3/2] w-20 rounded-2xl object-cover border-2 border-[#61C9A8]"
                 />
-                <h3 className="mt-4 text-lg font-semibold leading-8 text-gray-900">
-                  {person.name}
-                </h3>
+                <h3 className="mt-4 text-lg font-semibold leading-8 text-gray-900">{person.name}</h3>
                 <p className="text-sm leading-7 text-gray-600">
                   {person.role}{" "}
                   <span className="text-gray-600 font-bold hover:text-gray-400">
@@ -114,19 +114,12 @@ const Referrals: React.FC = () => {
                     </a>
                   </span>
                 </p>
-                <p className="mt-4 text-base leading-7 text-gray-600 whitespace-pre-line">
-                  {person.feedback}
-                </p>
+                <p className="mt-4 text-base leading-7 text-gray-600 whitespace-pre-line">{person.feedback}</p>
                 <ul role="list" className="mt-6 flex gap-x-6">
                   <li>
                     <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
                       <span className="sr-only">LinkedIn</span>
-                      <svg
-                        className="h-5 w-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
+                      <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                         <path
                           fillRule="evenodd"
                           d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"

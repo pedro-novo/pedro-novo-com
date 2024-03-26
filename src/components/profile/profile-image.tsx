@@ -1,11 +1,13 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 
 const ProfileImage: React.FC = () => {
   return (
-    <img
-      src="https://media.licdn.com/dms/image/C4E03AQGKj28vvVC_6g/profile-displayphoto-shrink_400_400/0/1570056222551?e=1703721600&v=beta&t=eHW3WVOtyBDMeKgRRsB63bh3rbhAS2QES5inTO41PNE"
-      alt="profile"
+    <Image
+      src="/pedro-novo.jpg"
+      alt="Pedro Novo"
+      width={200}
+      height={200}
       className="inline-block w-full max-w-xl rounded-full"
     />
   );
